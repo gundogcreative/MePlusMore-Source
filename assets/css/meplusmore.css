@@ -55,7 +55,7 @@ ul li {}
 ol {}
 ol li {}
 
-p {font-family:'Gotham Light';font-size:14px;}
+p {font-family:'Gotham Light';font-size:14px;color:#8b8e8f;}
 
 a {}
 a:hover {}
@@ -186,6 +186,7 @@ fieldset[disabled] .btn-success.active {
 /* 1.3 -- FOOTER */
 
 #footer {background-color:#313133;color:#fafafa;display:block;clear:both;width:100%;padding:24px 0 18px;}
+#footer p {color:#fff;}
 
 #footer #links {text-align:right;}
 #footer #links ul {margin:0;padding:0;}
@@ -223,7 +224,7 @@ fieldset[disabled] .btn-success.active {
 }
 
 #features-list {background-color:#5cb3bb;color:#fff;}
-#features-list p {font-family:'Archer Light', serif;font-size:20px;line-height:26px;margin:0 0 40px;}
+#features-list p {font-family:'Archer Light', serif;font-size:20px;line-height:26px;margin:0 0 40px;color:#fff;}
 
 #features-list .cta {text-align:center;margin:20px 0 0;}
 
@@ -254,6 +255,11 @@ fieldset[disabled] .btn-success.active {
 
 #gold-features {}
 #gold-features h5 {color:#2a3766;}
+#gold-features p.subHead {text-align:center;margin:-30px 0 50px;padding:0 120px;}
+
+@media (max-width:991px) {
+  #gold-features p.subHead {padding:0;}
+}
 
 .features-table {display:inline-block;width:100%;}
 
@@ -301,11 +307,27 @@ fieldset[disabled] .btn-success.active {
 
 
 #gold-list {background-color:#5cb3bb;color:#fff;}
-#gold-list .row p {margin-bottom:32px;}
+#gold-list .row p {margin-bottom:32px;color:#fff;}
 #gold-list .center {text-align:center;}
 #gold-list h3.center {margin:65px 0 30px;}
 
-#gold-connect {}
+#gold-connect {text-align:center;background-color:#5cb3bb;color:#fff;}
+#gold-connect h6 {font-size:16px;}
+
+@media (max-width:767px) {
+  #gold-connect .btn {display:block;}
+}
+
+
+
+
+/* 2.4 -- WHY */
+
+#why-page {}
+
+#why-list {}
+#why-list h3 {color:#2a3766;}
+#why-list p {margin-bottom:32px;}
 
 
 
@@ -375,3 +397,101 @@ fieldset[disabled] .btn-success.active {
     font-weight: normal;
     font-style: normal;
 }
+
+
+
+/* 4.1 -------- SOCIAL BUTTONS -------- */
+
+.btn-linkedin {
+  background-color: #007bb6;
+  border-color: #007bb6;
+  color:#fff;
+}
+.btn-linkedin:hover,
+.btn-linkedin:focus,
+.btn-linkedin:active,
+.btn-linkedin.active {
+  background-color: #006a9d;
+  border-color: #005983;
+  color:#fff;
+}
+.btn-linkedin.disabled:hover,
+.btn-linkedin.disabled:focus,
+.btn-linkedin.disabled:active,
+.btn-linkedin.disabled.active,
+.btn-linkedin[disabled]:hover,
+.btn-linkedin[disabled]:focus,
+.btn-linkedin[disabled]:active,
+.btn-linkedin[disabled].active,
+fieldset[disabled] .btn-linkedin:hover,
+fieldset[disabled] .btn-linkedin:focus,
+fieldset[disabled] .btn-linkedin:active,
+fieldset[disabled] .btn-linkedin.active {
+  background-color: #007bb6;
+  border-color: #007bb6;
+  color:#fff;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color:#fff;
+}
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active {
+  background-color: #344e86;
+  border-color: #2d4373;
+  color:#fff;
+}
+.btn-facebook.disabled:hover,
+.btn-facebook.disabled:focus,
+.btn-facebook.disabled:active,
+.btn-facebook.disabled.active,
+.btn-facebook[disabled]:hover,
+.btn-facebook[disabled]:focus,
+.btn-facebook[disabled]:active,
+.btn-facebook[disabled].active,
+fieldset[disabled] .btn-facebook:hover,
+fieldset[disabled] .btn-facebook:focus,
+fieldset[disabled] .btn-facebook:active,
+fieldset[disabled] .btn-facebook.active {
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color:#fff;
+}
+
+.btn-twitter {
+  background-color: #00aced;
+  border-color: #00aced;
+  color:#fff;
+}
+.btn-twitter:hover,
+.btn-twitter:focus,
+.btn-twitter:active,
+.btn-twitter.active {
+  background-color: #0099d4;
+  border-color: #0087ba;
+  color:#fff;
+}
+.btn-twitter.disabled:hover,
+.btn-twitter.disabled:focus,
+.btn-twitter.disabled:active,
+.btn-twitter.disabled.active,
+.btn-twitter[disabled]:hover,
+.btn-twitter[disabled]:focus,
+.btn-twitter[disabled]:active,
+.btn-twitter[disabled].active,
+fieldset[disabled] .btn-twitter:hover,
+fieldset[disabled] .btn-twitter:focus,
+fieldset[disabled] .btn-twitter:active,
+fieldset[disabled] .btn-twitter.active {
+  background-color: #00aced;
+  border-color: #00aced;
+  color:#fff;
+}
+
+
+
+
