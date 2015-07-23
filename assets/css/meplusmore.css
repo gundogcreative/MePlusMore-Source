@@ -34,28 +34,28 @@ END OF TABLE OF CONTENTS */
 /* 0.1 -- HTML/BODY */
 
 html {}
-body {font-family:'Archer Light', serif;}
+body {font-family:'Archer Light', serif;font-size:14px;}
 
 
 
 
 /* 0.2 -- TYPOGRAPHY */
 
-h1, h2, h3, h4, h5, h6 {}
+h1, h2, h3, h4, h5, h6 {font-family:'Archer Medium', serif;}
 
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+h1 {font-size:42px;line-height:50px;}
+h2 {font-size:38px;line-height:46px;}
+h3 {font-size:32px;line-height:40px;}
+h4 {font-size:27px;line-height:33px;}
+h5 {font-size:22px;line-height:28px;}
+h6 {font-size:18px;line-height:23px;}
 
 ul {}
 ul li {}
 ol {}
 ol li {}
 
-p {}
+p {font-family:'Gotham Light';font-size:14px;}
 
 a {}
 a:hover {}
@@ -63,10 +63,10 @@ a:hover {}
 .meplusmore {font-family:'Gotham Book';letter-spacing:-.02em;}
 .meplusmore span {font-family:'Gotham Medium';}
 
-.sectionHeading {font-family:'Archer Medium', serif;text-align:center;margin:0 0 40px;padding:0 2.5%;}
+.sectionHeading {font-family:'Archer Medium', serif;text-align:center;margin:0 0 70px;padding:0 2.5%;}
 .sectionHeading strong {font-family:'Archer Semibold', serif;}
 
-.sectionSubHeading {font-family:'Archer Medium', serif;text-align:center;margin:-20px 0 40px;padding:0 7.5%;}
+.sectionSubHeading {font-family:'Archer Medium', serif;text-align:center;margin:-60px 0 40px;padding:0 7.5%;}
 
 
 
@@ -75,7 +75,7 @@ a:hover {}
 
 #header, #hero, #content, #footer {display:inline-block;width:100%;clear:both;}
 
-.content-section {padding:80px 0;display:inline-block;width:100%;clear:both;}
+.content-section {padding:100px 0;display:inline-block;width:100%;clear:both;}
 
 
 
@@ -213,6 +213,7 @@ fieldset[disabled] .btn-success.active {
 .features-page {}
 
 #features-video {}
+#features-video h3 {font-size:24px;line-height:32px;}
 #features-video h3:first-child {margin-top:40px;}
 #features-video a.btn {margin-top:20px;}
 
@@ -222,14 +223,93 @@ fieldset[disabled] .btn-success.active {
 }
 
 #features-list {background-color:#5cb3bb;color:#fff;}
-#features-list h2 {color:#fff;margin-bottom:50px;}
-#features-list p {font-size:20px;line-height:26px;margin:0 0 40px;}
+#features-list p {font-family:'Archer Light', serif;font-size:20px;line-height:26px;margin:0 0 40px;}
 
 #features-list .cta {text-align:center;margin:20px 0 0;}
 
 @media (max-width:992px) {
   #features-list .cta a {display:block;}
 }
+
+
+
+
+/* 2.2 -- WHY */
+
+#why-page {}
+
+#why-use {}
+#why-use h2 {color:#2a3766;}
+#why-use p {margin-bottom:32px;}
+
+#why-cta {background-color:#5cb3bb;text-align:center;}
+#why-cta h3, #why-cta h5 {color:#fff;}
+
+
+
+
+/* 2.3 -- GOLD */
+
+#gold-page {}
+
+#gold-features {}
+#gold-features h5 {color:#2a3766;}
+
+.features-table {display:inline-block;width:100%;}
+
+.features-table ul {margin:0;padding:8px;list-style:none;}
+.features-table ul li {font-size:18px;margin:10px 0;}
+.features-table ul li.heading {font-size:24px;font-family:'Archer Medium', serif;height:60px;margin-bottom:20px;}
+.features-table ul li.action {margin:20px 0 0;}
+
+.features-table .feature-list {display:inline-block;width:50%;float:left;}
+
+.features-table .gold-checks {display:inline-block;width:30%;float:left;text-align:center;background-color:#fff;border:1px solid #bcc0c1;border-radius:2px;-webkit-border-radius:2px;box-shadow:0px 0px 10px 2px rgba(0,0,0,.1);-webkit-box-shadow:0px 0px 10px 2px rgba(0,0,0,.1);}
+.features-table .gold-checks ul li {color:#49d263;}
+.features-table .gold-checks ul li.heading {color:#2a3766;}
+
+.features-table .free-checks {display:inline-block;width:20%;float:left;text-align:center;}
+.features-table .free-checks ul li {color:#49d263;opacity:.8;}
+.features-table .free-checks ul li.heading {color:#333;}
+
+@media (min-width:1200px) {
+  .features-table {padding:0 230px;}
+}
+
+@media (max-width:1199px) {
+  .features-table {padding:0 140px;}
+}
+
+@media (max-width:991px) {
+  .features-table {padding:0 50px;}
+}
+
+@media (max-width:767px) {
+  .features-table {padding:0 30px;}
+  .features-table ul li {font-size:15px;}
+  .features-table ul li.heading {font-size:18px;height:50px;}
+}
+
+@media (max-width:480px) {
+  .features-table {padding:0 0;}
+  .features-table ul li {font-size:12px;}
+  .features-table ul li.heading {font-size:14px;height:50px;}
+  .features-table .feature-list {width:55%;}
+  .features-table .gold-checks {width:30%;}
+  .features-table .free-checks {width:15%;}
+}
+
+
+#gold-list {background-color:#5cb3bb;color:#fff;}
+#gold-list .row p {margin-bottom:32px;}
+#gold-list .center {text-align:center;}
+#gold-list h3.center {margin:65px 0 30px;}
+
+#gold-connect {}
+
+
+
+
 
 
 
