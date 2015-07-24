@@ -13,6 +13,7 @@
 0.2 -- TYPOGRAPHY
 0.3 -- BASE STRUCTURE
 0.4 -- BUTTONS
+0.5 -- FORMS 
 
 1.0 -- HEADER
 1.1 -- HERO
@@ -55,7 +56,7 @@ ul li {}
 ol {}
 ol li {}
 
-p {font-family:'Gotham Light';font-size:14px;color:#8b8e8f;}
+p {font-family:'Gotham Light', sans-serif;font-size:14px;color:#8b8e8f;}
 
 a {}
 a:hover {}
@@ -110,6 +111,13 @@ fieldset[disabled] .btn-success.active {
   background-color: #49d263;
   border-color: #49d263;
 }
+
+
+
+
+/* 0.5 -- FORMS */
+
+.form-control {height:42px;font-family:'Gotham Book';}
 
 
 
@@ -204,7 +212,67 @@ fieldset[disabled] .btn-success.active {
 
 /* 2.0 -- HOME */
 
-.home-page {???}
+#header.home {background-color:transparent;position:absolute;}
+
+#header.home #nav #brand span {font-size:42px;}
+
+#header.home #nav #menu ul li {font-size:22px;}
+#header.home #nav #menu ul li a i {font-size:18px;}
+
+@media (max-width:767px) {
+  #header.home #nav #brand span {font-size:34px;}
+  
+  #header.home #nav #menu {width:auto;float:right;}
+  #header.home #nav #menu ul {text-align:right;margin:0;}
+  #header.home #nav #menu ul li {display:inline-block;font-size:18px;}
+  #header.home #nav #menu ul li a {display:inline-block;border:none;}
+  #header.home #nav #menu ul li a i {font-size:15px;}
+  #header.home #nav #menu ul li a:hover {background-color:transparent;}
+}
+
+@media (max-width:480px) {
+  #header.home #nav #brand span {font-size:24px;}
+  
+  #header.home #nav #menu {margin-top:-2px;}
+  #header.home #nav #menu ul li {font-size:14px;}
+  #header.home #nav #menu ul li a i {font-size:12px;}
+}
+
+#hero.home {margin:0;text-align:left;padding:220px 0 275px;}
+
+#hero.home form {margin:30px 0 0;}
+#hero.home form label {display:block;color:#fff;}
+#hero.home form input {width:320px;display:inline-block;}
+#hero.home form button {display:inline-block;padding:10px 36px;margin:24px 0 0;}
+
+@media (max-width:991px) {
+  #hero.home {padding:180px 0 220px;}
+}
+
+@media (max-width:767px) {
+  #hero.home {padding:140px 0 170px;}
+  #hero.home {text-align:center;}
+  #hero.home form button {margin:0;width:320px;}
+}
+
+@media (max-width:480px) {
+  #hero.home {padding:110px 0 140px;}
+  #hero.home {text-align:center;}
+  #hero.home form input {display:block;width:100%;}
+  #hero.home form button {display:block;width:100%;}
+}
+
+#home-summary {background-color:#e3e8ea;text-align:center;}
+#home-summary h4 {padding:0 6%;}
+
+#home-overview {background-color:#f9f9f9;}
+#home-overview h5 {margin:0 0 32px;color:#727575;}
+#home-overview h6 {font-size:16px;color:#bcc0c1;margin:0 0 2px;}
+
+#home-cta {background-color:#5cb3bb;text-align:center;}
+#home-cta h3, #home-cta h5 {color:#fff;}
+
+
 
 
 
