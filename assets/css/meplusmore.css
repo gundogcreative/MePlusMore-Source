@@ -34,8 +34,7 @@ END OF TABLE OF CONTENTS */
 
 /* 0.1 -- HTML/BODY */
 
-html {}
-body {font-family:'Archer Light', serif;font-size:14px;}
+html, body {font-family:'Gotham Light', sans-serif;font-size:14px;}
 
 
 
@@ -58,8 +57,8 @@ ol li {}
 
 p {font-family:'Gotham Light', sans-serif;font-size:14px;color:#8b8e8f;}
 
-a {}
-a:hover {}
+a {color:#1f294c;}
+a:hover {color:#3f5299;}
 
 .meplusmore {font-family:'Gotham Book';letter-spacing:-.02em;}
 .meplusmore span {font-family:'Gotham Medium';}
@@ -169,7 +168,7 @@ fieldset[disabled] .btn-success.active {
 
 /* 1.1 -- HERO */
 
-#hero {margin:65px 0 0;padding:190px 0 275px;text-align:center;background-color:transparent;}
+#hero {margin:0;padding:190px 0 275px;text-align:center;background-color:transparent;}
 
 #hero.alt {margin:0;}
 
@@ -309,7 +308,11 @@ fieldset[disabled] .btn-success.active {
 
 #why-use {}
 #why-use h2 {color:#2a3766;}
-#why-use p {margin-bottom:32px;}
+
+
+#why-use h5 {margin-bottom:32px;}
+#why-use h5:hover {text-decoration:underline;cursor:pointer;}
+#why-use p {margin:0 0 24px;}
 
 #why-cta {background-color:#5cb3bb;text-align:center;}
 #why-cta h3, #why-cta h5 {color:#fff;}
@@ -398,6 +401,50 @@ fieldset[disabled] .btn-success.active {
 #why-list p {margin-bottom:32px;}
 
 
+
+
+/* 2.5 -- PRESS */
+
+#press-page {}
+
+#press-feed {}
+
+#press-feed ul {margin:0 0 25px;padding:0;}
+#press-feed ul li {list-style:none;margin-left:5px;}
+#press-feed ul li h5 {margin-left:-5px;}
+
+#press-feed .post {border-bottom:1px solid #ddd;margin-bottom:40px;padding-bottom:30px;}
+
+
+
+
+/* 2.6 -- TERMS PAGES */
+
+#terms-pages {}
+#terms-pages #terms-content {}
+#terms-content h5 {text-align:center;margin:0 0 70px;}
+#terms-content h6 {margin:34px 0 14px;}
+
+
+
+
+/* 2.7 -- CONTACT PAGE */
+
+#contact-page {}
+
+#contact-content form {margin:0 200px;}
+
+@media (max-width:991px) {
+  #contact-content form {margin:0 80px;}
+}
+
+@media (max-width:767px) {
+  #contact-content form {margin:0 40px;}
+}
+
+@media (max-width:480px) {
+  #contact-content form {margin:0 0;}
+}
 
 
 
